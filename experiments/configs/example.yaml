@@ -1,0 +1,27 @@
+name : 'example'
+
+env : 'NXColoringEnv'
+
+generators : 
+  erdos_renyi : [
+    {n : 100, p : 0.5},
+    {n : 50, p : 0.3}
+  ]
+  watts_strogatz : [
+    {n : 100, k : 10, p : 0.5},
+    {n : 50, k : 10, p : 0.3}
+  ]
+
+agents : 
+  agent1 : [
+    {key : value},
+    {key : value}
+  ]
+  agent2 : [
+    {key : value},
+    {key : value}
+  ]
+
+visualize : True
+
+analytic_solution : True 
